@@ -5,22 +5,17 @@
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	text-align: center;
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
-	justify-content: center;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
-	align-items: center;
 }
 
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	text-align: center;
 }
 
 h1,
@@ -56,15 +51,15 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
+
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 }
 
 header h1 {
-	float: left;
+
 	margin: 0;
-	padding: 38px 0;
+	padding-top: 18px;
 }
 
 header h1 span {
@@ -72,8 +67,8 @@ header h1 span {
 }
 
 header nav {
-	float: right;
-	padding: 46px 0;
+
+	padding: 38px 0;
 }
 
 header nav ul {
@@ -98,23 +93,17 @@ header nav ul li a {
 .top-section,
 .bottom-section {
 	margin: 0 auto;
-	clear: both;
+
 }
 
-.main-image {
-	height: auto;
-	float: left;
-}
+.main-image {}
 
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title {
-	height: auto;
-	float: left;
-}
+.main-title {}
 
 .main-title h3 {
 	text-align: left;
@@ -132,8 +121,8 @@ header nav ul li a {
 .section-two,
 .section-three {
 	width: 33%;
-	height: auto;
-	float: left;
+
+
 	border-top: 1px solid #eee;
 }
 
@@ -161,23 +150,16 @@ header nav ul li a {
 	color: #77a466;
 }
 
-.reviews {
-	color: #333;
-	font-size: 16px;
-	line-height: 21px;
-}
+.reviews {}
 
-.address {
-	font-size: 16px;
-	line-height: 24px;
-}
+.address {}
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
+
 	border-top: 3px solid #eee;
 	margin: 0 auto;
-	clear: both;
+
 	text-align: center;
 }
 
@@ -189,127 +171,102 @@ footer span {
 }
 
 
-/**************   mobile  ****
-         media query for
+/*****************************
+       mobile devices
 ******************************/
 
-@media screen and (min-width: 375px) {
+header {
+	text-align: center;
+}
 
+header nav ul li {
+	display: block;
+}
 
-	header h1 {
-		text-align: center;
-		float: none;
-		padding-top: 22rem;
+header nav ul li {
 
-	}
+	padding: 0.5rem 0;
+	font-size: 1.3rem;
+}
 
-	header {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		text-align: center;
-	}
-
-	header nav {
-		padding-top: 1rem;
-
-	}
-
-	header nav ul li {
-		display: block;
-		padding: 0.5rem 0;
-		font-size: 1.5rem;
-	}
-
-	.main-image {
-		margin-top: 18rem;
-		padding-bottom: 2rem;
-	}
-
-	.main-image,
-	img {
-		width: 100%;
-
-	}
-
-	.main-title {
-		text-align: center;
-		width: 360px;
-		margin: 0 auto;
-		float: none;
-
-	}
-
-	.main-title h3 {
-		font-size: 1.5rem;
-	}
-
-	.main-title p {
-		font-size: 1.2rem;
-		line-height: 1.5;
-	}
-
-	.bottom-section {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		text-align: center;
-	}
-
-	.section-one {
-		text-align: center;
-	}
-
-	.section-one h4 {
-		font-size: 1.5rem;
-	}
-
-	.section-one ul {
-		font-size: 1.5rem;
-	}
-
-	.section-two,
-	.section-three,
-	h4 {
-		font-size: 1.5rem;
-	}
-
-	.reviews,
-	.address {
-		font-size: 1.5rem;
-		line-height: 1.5;
-	}
-
-	.section-two,
-	.section-three {
-		width: 360px;
-	}
-
-	footer {
-		text-align: center;
-	}
+.main-image {
+	padding-bottom: 1rem;
+	width: 100%;
 
 }
+
+.main-image,
+img {}
+
+.top-section {
+	text-align: center;
+
+}
+
+.main-title {
+	text-align: center;
+	padding: 0 60px;
+
+}
+
+.main-title h3 {
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.main-title p {
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+
+.bottom-section {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	text-align: center;
+}
+
+.section-one {}
+
+.section-one h4 {}
+
+.section-one ul {
+	font-size: 1.2rem;
+}
+
+.section-two,
+.section-three,
+h4 {
+	font-size: 1.5rem;
+}
+
+.reviews,
+.address {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	padding: 0 60px;
+}
+
+.section-two,
+.section-three {
+	width: 560px;
+}
+
+footer {
+	text-align: center;
+	padding: 0 40px;
+	font-size: 16px;
+}
+
+
 
 @media screen and (orientation: landscape) {
 
