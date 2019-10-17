@@ -5,6 +5,10 @@
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	-webkit-box-pack: center;
@@ -13,9 +17,18 @@ body {
 	-ms-flex-align: center;
 }
 
+html {
+	font-size: 16px;
+}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -266,11 +279,72 @@ footer {
 	font-size: 16px;
 }
 
+/*    tablet media query */
+
+@media all and (min-width:768px) {
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+		width: 90%;
+	}
+
+	.main-title h3 {
+		font-size: 1.7rem;
+	}
+
+	.main-title p {
+		font-size: 1.3rem;
+	}
+
+	.section-one,
+	.section-two,
+	h4 {
+		font-size: 1.7rem;
+	}
+
+	.section-one ul {
+		font-size: 1.5rem;
+	}
+}
 
 
-@media screen and (orientation: landscape) {
+/* desk top media query */
 
-	.main-title {
-		text-align: center;
+@media all and (min-width: 1200px) {
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	header nav ul li {
+		margin-right: 18px;
+	}
+
+	.main-title h3 {
+		font-size: 2rem;
+	}
+
+	.main-title p {
+		font-size: 1.3rem;
+	}
+
+	.bottom-section,
+	h4,
+	p {
+		font-size: 2rem;
+	}
+
+	.section-one ul {
+		font-size: 1.5rem;
+	}
+
+	.section-two {
+		width: 100%;
+		max-width: 1100px;
+		line-height: 1.6;
+
 	}
 }
